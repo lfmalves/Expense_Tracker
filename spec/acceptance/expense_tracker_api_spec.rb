@@ -25,6 +25,12 @@ module ExpenseTracker
         'amount' => 5.75,
         'date' => '2017-06-10'
       )
+
+      zoo = post_expense(
+        'payee' => 'Zoo',
+        'amount' => 15.25,
+        'date' => '2017-06-10'
+      )
     end
   end
 end
