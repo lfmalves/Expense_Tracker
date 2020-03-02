@@ -20,11 +20,11 @@ module ExpenseTracker
     end
     
     it 'records submitted expenses' do
-      coffee = {
+      coffee = post_expense(
         'payee' => 'Starbucks',
         'amount' => 5.75,
         'date' => '2017-06-10'
-      }
+      )
     end
   end
 end
