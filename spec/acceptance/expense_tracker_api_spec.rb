@@ -37,6 +37,12 @@ module ExpenseTracker
         'amount' => 95.20,
         'date' => '2017-06-11'
       )
+
+      get'/expenses/2017-06-10'
+      expect(last_response.status).to eq(200)
+
+      expenses = JSON.parse(last_response.body)
+      expect(expenses).to contain_exactly(coffee, zoo)
     end
   end
 end
